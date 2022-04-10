@@ -1,0 +1,131 @@
+AGENT: Hello, welcome to VR/AR support. Please type your question below:
+
+YOU: What is the cost of you headsets?
+AGENT: The pricing for our full lineup can be found on our website: NexGenVR.com. Or you can also tell me which product you are looking for and I'll list the prices here. Our current products are the NX1, NX1-Pro, NX2, NX2-Pro, and the NX-PC headsets. Please let me know which one you are looking for.
+
+YOU: How about the NX1-Pro?
+AGENT: Thanks for being interested in our NX1-Pro headset. The base unit with 128GB of memory costs $599. The larger storage 512GB version is $669.
+
+AGENT: Thanks for using our support bot. The end of this branch has been reached. Returning to top.
+AGENT: Please type your question below:
+
+YOU: I have some probelm with the screen on my headset
+AGENT: I understand that the screen on your headset is having some issues. To help you troubleshoot further, please let me know if the screen can still turn on or if it is black.
+
+YOU: It's blcak now. I can't see anythign
+AGENT: Thanks for the information. If the screen on your headset is not turning on please try to see if you are able to boot into the bootup menu by pressing the volume(+) button and power button at the same time for 5 seconds when the headset is turned off. Let me know if you are able to see that screen :)
+
+YOU: No i can't see that screen
+AGENT: If you can't access the bootup menu, please make sure that your headset is charged. Plug your headset in with the included adapter and cable and make sure that the light on the headset turns orange to indicate that it's charging. Let me know if you are able to see the indicator light.
+
+YOU: Yes, I can see the indicator
+AGENT: I'm glad to know that you can see the light. Please let the headset charge for 3 hours and then attempt to boot it up again. If you are still encountering issues, please don't hesitate to come back to us and we can help you look into it further
+
+AGENT: Thanks for using our support bot. The end of this branch has been reached. Returning to top.
+AGENT: Please type your question below:
+
+YOU: I do have some issues with teh refudn process
+AGENT: From what you have typed, I understand that you seem to be having some problems with refunds. Please let me know if you want to return the game/appliaction or the headset?
+
+YOU: I want to return the headet
+AGENT: I understand that you seem to be having some problems with refunds of your purchased headset. Does the "status" section of your refund applciation on your account says "approved"?
+
+YOU: Actually nevermind. How do I factory reset my headset?
+AGENT: I'm sorry, I don't recognise your input for the current branch. Did you want information on "Factory Reset" instead?
+
+YOU: Yes
+AGENT: Thanks for letting me know. Changing branch...
+AGENT: To perform a factory reset on your headset, please press and hold the volume(+) button and power button at the same time for 5 seconds when the headset is turned off. Afterwards, select the factory reset option from the menu and press confirm
+
+AGENT: Thanks for using our support bot. The end of this branch has been reached. Returning to top.
+AGENT: Please type your question below:
+
+YOU: Can I get some information on the games that you make?
+AGENT: Our company has also produced two AR games, My Pet and Sword Master! Which one are you interested in?
+
+YOU: Neither of them
+AGENT: I'm sorry to hear that! We're currently working on producing more games. Would you like to subscribe to our email list to be updated when there are new games?
+
+YOU: Sure
+AGENT: I can help you get subscribed to our email list.
+
+AGENT: Please enter your email:
+
+YOU: ya right, like i'm giving you my email
+AGENT: Hmm. The input you have entered doesn't seem to be right. Please try again.
+
+YOU: TOODLES@NOPE
+AGENT: Hmm. The input you have entered doesn't seem to be right. Please try again.
+
+YOU: eddieZ@gmail.com
+AGENT: Thank you for your email! (The information that you have just typed is now saved and would be sent to a server for processing if this were an actual live bot.)
+
+AGENT: Thank you for subscribing to our email list! Would you like to know some more information of our games?
+YOU: yes
+AGENT: Please let me know which one you would like to get more info on. My Pet or Sword Master?
+
+YOU: The second one please
+AGENT: Sword Master is a great game for testing your reflexes! Would you like a more detailed description? 
+
+YOU: Sure
+AGENT: Sword Master offers a variety of cool swords for you to choose from! Protect yourself by swinging at various objects in the game. You can even take photos of them through your device! Are you interested in downloading our game?
+
+YOU: not right now
+AGENT: No worries, if you have any other questions, please let me know
+
+AGENT: Thanks for using our support bot. The end of this branch has been reached. Returning to top.
+AGENT: Please type your question below:
+
+YOU: Can I leave a review?
+AGENT: Thank you for your interest in providing us feedback! Please provide the following information to leave a review
+
+AGENT: Please enter your name:
+
+YOU: Howard Stark
+AGENT: Please enter your email:
+
+YOU: hoho@starkindustries.ca
+AGENT: Thank you for your contact information, please enter your feedback now :)
+
+YOU: I think that the products you made are really good and I really like your games. Keep up the good work!
+AGENT: Thank you for providing that information!
+
+AGENT: Review saved successfully. Thank you for your feedback!
+AGENT: Thanks for using our support bot. The end of this branch has been reached. Returning to top.
+AGENT: Please type your question below:
+
+YOU: I go some issues with teh sofater
+AGENT: If you're having some trouble with out PC software, please let me know if you're experiencing trouble while installing it or if you're getting performance issues.
+
+YOU: Getting probmems dueing install
+AGENT: Since you are getting some trouble with installing our software, please let me know at which part of the installation process is the problem occuring at. Download stage, installation stage 1 or installation stage 2?
+
+YOU: Stage 2
+AGENT: If you're getting issues at this stage of installation, the problem is likely to be that your computer doesn't meet the recommended specifications. Please make sure that your computer meets our recommended specifications which can be found here: NexGenVR.com/recspecs. Let me know if your computer meets the recommended specifications.
+
+YOU: Yes it does
+AGENT: Hmm. In this case, I would need for you to check some additional settings on your computer so that I can eliminate possible failure points. 1) Please check that your computer is up to date and install any pending updates. 2) Check that your antivirus software is not blocking the download of our software. Try temporarily disabling your antivirus before running the installer. --- Let me know once you have finished checking these.
+YOU: I'm done
+AGENT: Thanks for letting me know you're done. Please let me know if it helped.
+
+YOU: Nope
+AGENT: In this case, I would like to ask you to open the following file on your computer "C:/User/*Your Username*/AppData/NXLogs/installlog.txt" and let me know what error code you see in there. (Note: Possible error codes: 310, 404, 2266, 9914)
+
+YOU: I see 310
+AGENT: I see. Thanks for the information. Error code 310 means that your computer hard drive is not formatted with NTFS. Please make sure that you are installing to a drive with NTFS formatting. If you need any further help, please don't hesitate to contact us again.
+
+AGENT: Thanks for using our support bot. The end of this branch has been reached. Returning to top.
+AGENT: Please type your question below:
+
+YOU: Do you guys have any in game purchases?
+AGENT: To ensure an optimal customer experience we have ditched the predatory practice of microtransaction and proudly announce that our games have no in game purchases. However, you can donate to our company! Would you like to learn more?
+
+YOU: Yes
+AGENT: We're glad to hear that! Your donations help keep these wonderful games free for everyone! Would you like to donate? 
+
+YOU: Of course
+AGENT: Thank you very much! We appreciate your generosity! You can donate through the donations page on our website at NexGenVR.com.
+
+AGENT: Thanks for using our support bot. The end of this branch has been reached. Returning to top.
+AGENT: Please type your question below:
+

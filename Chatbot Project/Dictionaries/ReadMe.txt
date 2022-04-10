@@ -1,0 +1,1 @@
+If you're getting a NullPointerException or NumberFormatException when running. Delete Dict folder and replace with folder from zip file.

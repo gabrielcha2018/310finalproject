@@ -1,0 +1,18 @@
+~~~Review
+    Name|Please enter your name:
+    ^[a-zA-Z\s]+$
+    Email|Please enter your email: 
+    ^[\w-_\.+]*[\w-_\.]\@([\w]+\.)+[\w]+[\w]$
+    Review|Thank you for your contact information, please enter your feedback now :)
+    
+    Close|Thank you for providing that information!
+~~~Email
+    Email|Please enter your email: 
+    ^[\w-_\.+]*[\w-_\.]\@([\w]+\.)+[\w]+[\w]$
+    Close|Thank you for your email! (The information that you have just typed is now saved and would be sent to a server for processing if this were an actual live bot.)
+~~~Refund
+    Email|Please enter your email:
+    ^[\w-_\.+]*[\w-_\.]\@([\w]+\.)+[\w]+[\w]$
+    Order number|What is your order number?
+    \b\d+\b
+    Close|Thank you for that information! Let me pull up your order now... (The information that you have just typed is now saved and would be sent to a server for processing if this were an actual live bot.)

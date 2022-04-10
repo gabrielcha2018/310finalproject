@@ -1,0 +1,130 @@
+!Device Issues|problem,issue,broken,not work,fail,can't,complain,help,isn't,black,need|From what you have typed, I understand that you need some help with our products. Please let me know what problem you're having.
+	!Screen Issues|screen,display|I understand that the screen on your headset is having some issues. To help you troubleshoot further, please let me know if the screen can still turn on or if it is black.
+		#|black,not turning on,power,boot|Thanks for the information. If the screen on your headset is not turning on please try to see if you are able to boot into the bootup menu by pressing the volume(+) button and power button at the same time for 5 seconds when the headset is turned off. Let me know if you are able to see that screen :)
+			#|yes,yup, i can , see it|Great! In this case, please select the "reboot" option in the menu and your headset should boot up as normal
+			#|can't see,black,not turning on,power on,dead, no |If you can't access the bootup menu, please make sure that your headset is charged. Plug your headset in with the included adapter and cable and make sure that the light on the headset turns orange to indicate that it's charging. Let me know if you are able to see the indicator light.
+				#| can't see ,doesn't work,black,no luck,doesn't light up,no light,black, no |If you can't see the light, please make sure that the power outlet has power. If you have checked that the power outlet has power, please try a different adapter and cable to see if those can get it to charge. Let me know if the light lights up after trying another outlet and charger
+					#|doesn't work, no ,no light,doesn't work,still,fail|In this case, I'm afraid that I won't be able to help you on this problem further. Please send an email to our support representatives at vrsupport@metaverse.ca and they will respond within 3 business days.
+				#| can see ,lighting up now, yes ,work,yup|I'm glad to know that you can see the light. Please let the headset charge for 3 hours and then attempt to boot it up again. If you are still encountering issues, please don't hesitate to come back to us and we can help you look into it further
+		#|works, on |Thanks for the information. If the screen is still displaying images, please let me know what type of issue you are experiencing. (Display Blur/Color issues)
+			!|blurry,fuzzy,blurred,blur,bloom,not clear,clarity|Since you are having some issues with blurriness, please try to adjust the headstrap on your headset as well as the IPD of the lenses to see if you can minimize the blurriness. Please refer to our support website here for first time setup information as well as how to properly wear your headset
+			!|color,colour,shades|If you are having color accuracy problems, please try changing the settings under: General > Display > Color. If modifying those settings doesn't work, please try a factory reset on your headset. Would you like to know how to perform a factory reset?
+				#|yes,factory reset,sure, ok ,please|To perform a factory reset on your headset, please press and hold the volume(+) button and power button at the same time for 5 seconds when the headset is turned off. Afterwards, select the factory reset option from the menu and press confirm
+	!Software Problems|software,program, PC ,computer,install,download|If you're having some trouble with out PC software, please let me know if you're experiencing trouble while installing it or if you're getting performance issues.
+		!|install,get|Since you are getting some trouble with installing our software, please let me know at which part of the installation process is the problem occuring at. Download stage, installation stage 1 or installation stage 2?
+			#|download|If you're getting trouble during the downloading phase, please make sure that you are able to access our website at NexGenVR.com and that your computer firewall settings permit access to our site. Also, please make sure that you have a stable internet connection and also try using a different internet source to try and download our software (Public WiFi or a mobile connection). Let me know after checking if you are able to download our software.
+				&|finish,done,next|Thanks for letting me know you're done. Please let me know if it helped.
+				SftAdvTS1#|works,yes,thank,working|I'm glad that I was able to help. Please don't hesitate to contact us again if you need future assistance.
+				SftAdvTS2#| no ,not working,fail,problem,same,isn't|Hmm. In this case, I would need for you to check some additional settings on your computer so that I can eliminate possible failure points. 1) Please check that your computer is up to date and install any pending updates. 2) Check that your antivirus software is not blocking the download of our software. Try temporarily disabling your antivirus before running the installer. --- Let me know once you have finished checking these.
+					SftTS1&|finish,done,next|Thanks for letting me know you're done. Please let me know if it helped.
+					SftTS2#|works,yes,thank,working|I'm glad that I was able to help. Please don't hesitate to contact us again if you need future assistance.
+					SftTS3#| no,not working,fail,problem,same,isn't|In this case, I would like to ask you to open the following file on your computer "C:/User/*Your Username*/AppData/NXLogs/installlog.txt" and let me know what error code you see in there. (Note: Possible error codes: 310, 404, 2266, 9914)
+						#|don't see,can't see,nothing,empty,can't|Hmm. That's quite odd, if our program was running normally, there should have been an install log at that location. Please try re-downloading the installer from our website again and this time, try running the installer in admin mode. Let me know if this helps.
+							#|works,yes,thank,working|I'm glad that I was able to help. Please don't hesitate to contact us again if you need future assistance.
+							#| no ,not working,fail,problem,same,isn't|In this case, I'm afraid that I won't be able to help you on this problem further. Please send an email to our support representatives at vrsupport@metaverse.ca and they will respond within 3 business days.
+						#|310|I see. Thanks for the information. Error code 310 means that your computer hard drive is not formatted with NTFS. Please make sure that you are installing to a drive with NTFS formatting. If you need any further help, please don't hesitate to contact us again.
+						#|404|I see. Thanks for the information. Error code 404 means that you are attempting to install our software onto a virtual machine. Please install our software without virtualization. If you need any further help, please don't hesitate to contact us again.
+						#|2266|I see. Thanks for the information. Error code 2266 means that your computer's region format is not set to "Canada" or "United States". Please check your computer regions settings and try again. If you need any further help, please don't hesitate to contact us again.
+						#|9914|I see. Thanks for the information. Error code 9914 means that our program was blocked from writing files to the installation directory. Please check the directory folder permissions and try installing again or to a different drive. If you need any further help, please don't hesitate to contact us again.
+			#|install,stage,1,2|If you're getting trouble during the installation phase, let me know which stage is the installation failing on. Stage 1 or stage 2?
+				!|stage 1,1,one|If you're getting issues at this stage of installation, the problem is likely to be the amount of space that is available on your storage drive. Please make sure that you have at least 20GB of free space on the drive before installing. Does your drive have more than 20GB of free space?
+					#|enough,more,have,yes|In this case, since you have checked that you have enough space, please also make sure that your computer is allowing write permissions to the installation directory to our program. Let me know if it helps.
+						>||SftAdvTS1
+						>||SftAdvTS2
+				!|stage 2,2,two|If you're getting issues at this stage of installation, the problem is likely to be that your computer doesn't meet the recommended specifications. Please make sure that your computer meets our recommended specifications which can be found here: NexGenVR.com/recspecs. Let me know if your computer meets the recommended specifications.
+					#| no, doesn't, not, does not|If your computer doesn't meet the requirements, then that is the most likely reason why you're gettin trouble during installation. Please try to install the program on another computer which does meet these requirements.
+					#| yes, meet, does |Hmm. In this case, I would need for you to check some additional settings on your computer so that I can eliminate possible failure points. 1) Please check that your computer is up to date and install any pending updates. 2) Check that your antivirus software is not blocking the download of our software. Try temporarily disabling your antivirus before running the installer. --- Let me know once you have finished checking these.
+						>||SftTS1
+						>||SftTS2
+						>||SftTS3
+	!Refund Problems|refund|From what you have typed, I understand that you seem to be having some problems with refunds. Please let me know if you want to return the game/appliaction or the headset?
+		!|headset|I understand that you seem to be having some problems with refunds of your purchased headset. Does the "status" section of your refund applciation on your account says "approved"?
+			#| no |When you return an item, your refund and how your refund is issued, may differ based on the condition of the item, how long you've had the item, and how the item was purchased.Is the item you are returning complete and in good condition?	
+				#|yes,yup|Thanks for the information, Do you have the item for longer than the latest refund period?
+					#|yes,yup|If you have already sent the item, we will return it to you immediately upon receipt and no refund will be given.
+					#| no ,not yet|Thanks for the information, Usually we need up to 7 business days to process a refund, has it been more than 7 business days since your refund request date?
+						#|yes,yup|In this case, I'm afraid that I won't be able to help you on this problem further. Please send an email to our support representatives at vrsupport@metaverse.ca and they will respond within 3 business days.
+						#| no ,nope,not yet|Thank you for your patience, After you cancel an order or payment, it can take some time before your account is credited. You can check the refund progress at any time on your account page.
+				#| no ,nope,not yet|If there is damage to the item, we will determine the final refund amount by evaluating the extent of the damage to the item, and the time required for the evaluation will result in a refund period that may exceed 7 business days. You can check the refund progress at any time on your account page.
+			#|yes,yup|Thanks for the information, Usually we need up to 7 business days to process a refund, has it been more than 7 business days since your refund request date?
+				#|yes,yup|In this case, I'm afraid that I won't be able to help you on this problem further. Please send an email to our support representatives at vrsupport@metaverse.ca and they will respond within 3 business days.
+				#| no ,nope,not yet|Thank you for your patience, After you cancel an order or payment, it can take some time before your account is credited. You can check the refund progress at any time on your account page.
+			#|don't know|You can find out your refund's status by checking out your account page, for the return policy you can check www.oculcusreturnpolicy.com.
+		!|game,application,app,software|I understand that you seem to be having some problems with refunds of your purchased games/appliactions. Can I please ask if the refund has been approved?.
+			#| no ,nope|Thanks for the information, Issue a refund for any game or application that is requested within 7 days of purchase and has been played for less than 2 hours.
+			#|yes,yup|Usually we need up to 7 business days to process a refund, has it been more than 7 business days since your refund request date?
+				#|yes,yup|In this case, I'm afraid that I won't be able to help you on this problem further. Please send an email to our support representatives at vrsupport@metaverse.ca and they will respond within 3 business days.
+				#| no ,nope,not yet|Thank you for your patience, After you cancel an order or payment, it can take some time before your account is credited. You can check the refund progress at any time on your account page.
+	!Payment Issues|card,credit,debit,paypal,payment|I understand that you are having some issues with payments on our platform, can you please describe the problem further?
+	!Controller Problems|controller,accessories,accessory,hand,track|I understand that you are having some problems with the controllers. Please let me know if you need help with pairing, damage, or tracking issues.
+		!|pair,connect,link|To pair your controllers, open our mobile app on your phone select your device in the top left corner of the app then tap "Devices > Controllers > Pairing" Press and hold the power button on your controller until the controller LED blinks to finalize the pairing process. Let me know if you were able to successfully pair your controllers.
+			#| no ,not,still,can't|That didn't help eh? In this case, please check that your controllers have power. If you are not able to see the power light on the controller turn on please try to charge the controllers first. Let me know if you can pair your controllers after making sure that they have power.
+				#|works,yes,thank,working,yup|I'm glad that I was able to help. Please don't hesitate to contact us again if you need future assistance.
+				#| no ,not working,fail,problem,same,isn't|In this case, I'm afraid that I won't be able to help you on this problem further. Please send an email to our support representatives at vrsupport@metaverse.ca and they will respond within 3 business days.
+			#|works,yes,thank,working|I'm glad that I was able to help. Please don't hesitate to contact us again if you need future assistance.
+		!|damage,broken|If your controllers have physical damage, I'm afraid that I won't be able to help you on this problem further. Please send an email to our support representatives at vrsupport@metaverse.ca and they will respond within 3 business days.
+!Our company's AR games|game, AR ,augmented reality,product|Our company has also produced two AR games, My Pet and Sword Master! Which one are you interested in?
+	GameInfo1!My Pet Game|pet,animal,first|My Pet features a pet that you can interact with on your phone. Would you like a more detailed description? 
+		#|yes,sounds good,sure|My Pet offers different animals, including dogs, cats, birds, for you to choose from! You can interact with the animals by feeding, petting, or bathing them. You can even take photos of them through your device! Are you interested in downloading our game?
+			GameDownload1#|yes,yup|To download our games, please head on over to NexGenVR.com/download and follow the instructions from the installer.
+			GameDownload2#| no,nah|No worries, if you have any other questions, please let me know
+		NotInterested#| no |Sorry to hear that. You can check out other games at NexGenVR.com.
+	GameInfo2!Sword Master Game|sword,master,second|Sword Master is a great game for testing your reflexes! Would you like a more detailed description? 
+		#|yes,sounds good,sure|Sword Master offers a variety of cool swords for you to choose from! Protect yourself by swinging at various objects in the game. You can even take photos of them through your device! Are you interested in downloading our game?
+			>||GameDownload1
+			>||GameDownload2
+		>||NotInterested
+	#|neither,none|I'm sorry to hear that! We're currently working on producing more games. Would you like to subscribe to our email list to be updated when there are new games?
+		#~Email|yes,yup,sure|I can help you get subscribed to our email list.
+			#||Thank you for subscribing to our email list! Would you like to know some more information of our games?
+				#|yes,sure|Please let me know which one you would like to get more info on. My Pet or Sword Master?
+					>||GameInfo1
+					>||GameInfo2
+				#| no ,nah|Ok, let me know if you have any more questions
+		#| no ,nah|No worries, please have a wonderful rest of your day!
+	!Price of our games|cost,price,refund,pay,purchase|Our AR games are completely free! However, you can donate to our company! Would you like to learn more?
+		GamePurchaseTag1#| No,nah|That's okay. We hope you enjoy the games!
+		GamePurchaseTag2#|Yes,sure,of course,certainly|We're glad to hear that! Your donations help keep these wonderful games free for everyone! Would you like to donate? 
+			#| no,nah|That's okay. We hope you enjoy the games!
+			#|Yes,sure,of course,certainly|Thank you very much! We appreciate your generosity! You can donate through the donations page on our website at NexGenVR.com.
+			#|payment,card,credit,debit,paypal|We accept credit cards and PayPal. We do not accept debit cards at this moment.
+		!In game purchases|in game,in-game|To ensure an optimal customer experience we have ditched the predatory practice of microtransaction and proudly announce that our games have no in game purchases. However, you can donate to our company! Would you like to learn more?
+			>||GamePurchaseTag1
+			>||GamePurchaseTag2
+	!Game accounts|account,create,login|You do not need an account to download or access our AR games from the app store.
+	!Game ratings|rating,kid,friendly|All our games are kid friendly and suitable to people of all ages.
+	!Game requirements|devices,need,require|You only need a smartphone with a working camera to play our games! Do you have issues regarding your smartphone?
+		#|yes|Unfortunately, our AR games do not work with all cellphones, please check your device compatibility at NexGenVR.com. You can find a detailed list of compatible devices there.
+		#| no |That's good to hear, enjoy the game! 
+!User Information|delete,user data, GDRP ,privacy|If you wish to delete your user data, email our support team at argames@metaverse.ca with the title of the game with the subject line "User Data Deletion".
+!Factory Reset|factory,reset,reinstall,re-install|To perform a factory reset on your headset, please press and hold the volume(+) button and power button at the same time for 5 seconds when the headset is turned off. Afterwards, select the factory reset option from the menu and press confirm
+!Shipments|order,ship,delivery,arrive,package,track|To track your package, please log into your VR account. You can see your orders under the ORDERS tab. Deliveries typically take between 3-5 business days from ordering.
+!Refunds~Refund|refund,return,order,package|To process a refund, I will need to gather some information.
+!How to contact us|contact,email,phone|Would you like our phone number or email address?
+	!|phone,number|Our contact number is 7702914533
+	!|email,email address|Our contact email is vrsupport@metaverse.ca
+!Pricing|cost,price,hardware,headset,product|The pricing for our full lineup can be found on our website: NexGenVR.com. Or you can also tell me which product you are looking for and I'll list the prices here. Our current products are the NX1, NX1-Pro, NX2, NX2-Pro, and the NX-PC headsets. Please let me know which one you are looking for.
+	!|NX1-Pro,NX1 Pro|Thanks for being interested in our NX1-Pro headset. The base unit with 128GB of memory costs $599. The larger storage 512GB version is $669.
+	!|NX2-Pro,NX2 Pro|Thanks for being interested in our NX2-Pro headset. The base unit with 128GB of memory costs $599. The larger storage 512GB version is $669.
+	!|NX1|Thanks for being interested in our NX1 headset. The base unit with 64GB of memory costs $399. The larger storage 128GB version is $499.
+	!|NX2|Thanks for being interested in our NX2 headset. The base unit with 64GB of memory costs $459. The larger storage 128GB version is $559.
+	!|NX-PC,NXPC,NX PC|Thanks for being interested in our NX-PC headset. The unit costs $249.
+!Payment Options|payment,card,credit,debit,paypal|We accept credit cards and PayPal. We do not accept debit cards at this moment.
+!Device Setup|setup, use ,set up|You need to (1) download the app from this link vrmetaverseinstall.com. (2)pairing:connect the vr headset on your phone.(type: "pairing" if need help)
+	!|pairing|you need to (1)log it your account from the app. (2)connect page:go to the account > connect >on (3) turn vr headset's bluetooth on.(type: "bluetooth" if need help)(4) click the vr headset name that appear on connect page(step 2)
+	!|bluetooth| hold the power button on the vr headset until you see the flashing green light. 
+!Social Features|add,friends,multiplayer,invite|To play a games with your friends (1) Using app or entering in virtual room by wearing headset navigate to friends > add (2)select a game from gallery and click multiple players,following the instruction from the screen
+!Device Customization|customize,virtual|to change the decoration of the virtual home, wearing the headset, navigate to setting > scene.
+!How to check battery levels|battery,power,life|Do you want to check the battery of the controller or the headset? 
+	!|control|To check the power of the controller, double click the power button on the controller, the remaining battery life will be visible in the headset pop-up  
+	!|heads, helm|to check the battery power of the headset, you can either use the app to navigate to equipment > battery, or you can check the power on the top right corner when you enter the virtual room by wearing the headset.
+!Charging your device| charg|Are you looking for help on charging the controller or the headset? 
+	!Charging your contoller|control|Remove the cover at the bottom of the controller, insert the included charging cable and plug the wall adapter into a powered outlet. 
+	!Charging your headset| head, helm|Remove the cover on the side of the headset, insert the included charging cable and plug the wall adapter into a powered outlet.
+!How to watch videos|movie,film,video,watch|To watch videos using the headset, open the "Cinema" app in the headset and select a video to play.
+!How to change video quality|quality|to change the movie quality, select the movie by using headset, click the three points icon on top right corner of the movie, navigate to quality
+!Device pairing|pair,connect,link|Are you looking for information on how to pair your controllers or headset?
+	!Controller pairing|control,remote|To pair your controllers, open our mobile app on your phone select your device in the top left corner of the app then tap "Devices > Controllers > Pairing" Press and hold the power button on your controller until the controller LED blinks to finalize the pairing process. Let me know if you were able to successfully pair your controllers.
+	!Headset pairing| head, helm|To pair your headset, please open the app on your phone. Head into settings > pairing then follow the instructions to pair your headset.
+!Leaving a review~Review|review,feedback,suggestion|Thank you for your interest in providing us feedback! Please provide the following information to leave a review
+!How to contact one of our representatives|Human,representative,person|To get in contact with one of our representatives, please send an email to support@arvrcompany.com
