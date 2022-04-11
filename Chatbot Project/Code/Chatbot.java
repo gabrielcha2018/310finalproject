@@ -22,6 +22,7 @@ public class Chatbot {
 
 	GUI gui;
 	Dict spellCheck;
+	Translator translator; // new added code 
 
 	private boolean foundPotentialPath, flowComplete;
 	private int flowMarker;
