@@ -13,6 +13,7 @@
         "Chatbot Project/Jars/ejml-simple-0.39.jar",
         "Chatbot Project/Jars/stanford-corenlp-4.4.0-models.jar",
         "Chatbot Project/Jars/junit-4.13.2.jar",
-        "Chatbot Project/Jars/hamcrest-all-1.3.jar"
+        "Chatbot Project/Jars/hamcrest-all-1.3.jar",
+        "Chatbot Project/Jars/json-simple-1.1.1.jar"
     ]
 }
