@@ -3,29 +3,21 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLEncoder;
-import java.util.HashMap;
-import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 
 public class Translator {
 
-
+static String text;
 
   public static String translate(String word) throws Exception {
 
-
-
-         String url = 
-              "https://translate.googleapis.com/language/translate/v2?target=en&key=AIzaSyApag4W3awsC2-yPCsQS5SpTSOlxjrxt1Y&q=" +
+ String url = "https://translate.googleapis.com/language/translate/v2?target=en&key="
+              + "AIzaSyApag4W3awsC2-yPCsQS5SpTSOlxjrxt1Y&q=" +
               word;
-        
-
-// https://translation.googleapis.com/language/translate/v2?target=zh-CN&key=AIzaSyApag4W3awsC2-yPCsQS5SpTSOlxjrxt1Y&q=test
-
-              
+                      
 
       URL obj = new URL(url);
       HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -41,44 +33,29 @@ public class Translator {
       in.close();
 
     
-      return  parseResult(response.toString());
+      return  response.toString();
     
   } 
 
-  private static String parseResult(String inputJson) throws Exception {
 
-
-    // for(int i =0; i < inputJson.length();i++ )
-    // System.out.println(i);
-    // return "finsih"; 
-    
-// JSONParser parser = new JSONParser();  
-// JSONObject json = (JSONObject) parser.parse(stringToParse);  
-
-    // JSONObject obj = new JSONObject();
-    // JSONObject jsonObject = obj.getJSONObject("main");
-    // System.out.println(jsonObject.get("temp")); 
-  }
 
   public static void main(String[] args) throws Exception {
-    String result = translate("Bonjour");
-    System.out.println(result);
+    text= "Bonjour";
+    String result = translate(text);
+    JSONParser parser = new JSONParser();  
+   JSONObject json = (JSONObject) parser.parse(result);  
+   JSONObject j1 = (JSONObject) json.get("data");  
+   JSONArray a1=  (JSONArray) j1.get("translations");
+   JSONObject tra = (JSONObject) a1.get(0);
+  System.out.println("translatedText is " + tra.get("translatedText"));
+  System.out.println("the source language is "+ tra.get("detectedSourceLanguage"));
+
+
   }
 
 
 }
 
 
-// JSONParser parser = new JSONParser();  
-// JSONObject json = (JSONObject) parser.parse(stringToParse);  
 
-// JSONArray array = new JSONArray(str);  
-// for(int i=0; i < array.length(); i++)   
-// {  
-// JSONObject object = array.getJSONObject(i);  
-// System.out.println(object.getString("No"));  
-// System.out.println(object.getString("Name"));  
-// }  
-// }  
-// }  
 
