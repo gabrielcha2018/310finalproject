@@ -21,8 +21,8 @@ public class Chatbot {
 	ArrayList<String> saved_nodes_id = new ArrayList<String>();
 	ArrayList<Flow> flows = new ArrayList<Flow>();
 	ArrayList<String> flowID = new ArrayList<String>();
-	String [] inputinfo;
-	String language;
+	String [] inputinfo; // new code 
+	String language;   // new code // place holder for the userinput language
 
 	GUI gui;
 	Dict spellCheck;
@@ -35,7 +35,7 @@ public class Chatbot {
 
 	public Chatbot() {
 		current_node = Root;
-		initializeFlows();
+		initializeFlows(); 
 		initializeResponses();
 		try {
 			spellCheck = new Dict();
@@ -68,6 +68,7 @@ public class Chatbot {
 		flowComplete = false;
 
 		gui.sendMessage("Program has been reset. Please type your question below:\n");
+		
 	}
 	
 	/**
@@ -77,20 +78,21 @@ public class Chatbot {
 	 * @throws ParseException
 	 */
 	public void processInput(String userInput) throws ParseException, Exception{
+
+
+// new code 
 		String temp = userInput;
 		translator.translate(userInput); // using the translator class to translate the user input
 		inputinfo= translator.returnArray( ) ;
 		 language =inputinfo[1];  // checking which language the user input 
 
-	
 if (!language.equals("en")){   // if user are not writing english 
 	 userInput =inputinfo[0];
 	gui.sendMessage("Your orginal input is " +temp+" it has been auto transleted to enlgish as \n " + userInput+  "\n");
 }
-	// new added code
-	
-	else    userInput=temp;
-
+	else   
+	 userInput=temp;
+//......................................................................................
 
 		// If current node has a Flow, execute it
 		if(current_node.hasFlow() && !flowComplete) processFlow(userInput);
