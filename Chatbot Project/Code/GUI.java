@@ -6,6 +6,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.text.DefaultCaret;
 
+import org.json.simple.parser.ParseException;
+
 
 public class GUI {
   JFrame frame = new JFrame("VR support");
@@ -88,7 +90,15 @@ public class GUI {
       textHistory.append("YOU: " + lastInput + "\n");
       userinput.setEditable(false);
       userinput.setText("Agent typing...");
-      new Thread(() -> { chatbot.processInput(lastInput); }).start();
+      new Thread(() -> { try {
+        chatbot.processInput(lastInput);
+      } catch (ParseException e) {
+        // TODO Auto-generated catch block
+       System.out.println("problem on parse the json object");
+      } catch (Exception e) {
+        // TODO Auto-generated catch block
+        System.out.println("some bad happend");
+      } }).start();
     }
   }
 
