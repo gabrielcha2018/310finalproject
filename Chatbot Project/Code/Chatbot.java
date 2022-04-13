@@ -27,6 +27,7 @@ public class Chatbot {
 	GUI gui;
 	Dict spellCheck;
 	Translator translator; // new added code 
+	Staticmaps  staticmaps;
 
 	private boolean foundPotentialPath, flowComplete;
 	private int flowMarker;
@@ -50,6 +51,7 @@ public class Chatbot {
 		gui = new GUI(this);
 		gui.sendMessage("Hello, welcome to VR/AR support. Please type your question below:\n");
 		translator = new Translator(); // new added code 
+		staticmaps = new  Staticmaps(); // new added code 
 		potentialPath = Root;
 		foundPotentialPath = false;
 		flowMarker = -1;
@@ -92,6 +94,18 @@ if (!language.equals("en")){   // if user are not writing english
 }
 	else   
 	 userInput=temp;
+
+	 if (userInput.equals("map")){
+		gui.sendMessage("Our product could be buy in following store just copy the address below \n https://goo.gl/maps/5Wu6CVd9DzwwTA5M6");
+		staticmaps.showimage();
+	   gui.sendMessage("Thank you for using the map services. pleace type if you have more question");		
+		 reset();
+		 userInput="";
+		
+	 }
+
+  
+
 //......................................................................................
 
 		// If current node has a Flow, execute it
@@ -104,6 +118,7 @@ if (!language.equals("en")){   // if user are not writing english
 				current_node.getFlow().saveInputs(flowInputs);
 				gui.sendMessage("Review saved successfully. Thank you for your feedback!");
 			}		
+
 
 			if (selectPath(current_node, userInput, 0) == null) { // No more paths, back to Root
 				current_node = Root;
@@ -124,9 +139,14 @@ if (!language.equals("en")){   // if user are not writing english
 			try { // Spelling check
 				userInput = spellCheck.extendSentence(userInput);
 				System.out.println(userInput);
+
+
 			} catch (FileNotFoundException | JWNLException | InterruptedException e) {
 				e.printStackTrace();
 			}
+
+
+
 
 			if (potentialPath != Root) { // If previous input resulted in potentialPath, check if user says yes or no
 				if (userInput.toLowerCase().contains("yes")) {
@@ -146,6 +166,7 @@ if (!language.equals("en")){   // if user are not writing english
 						gui.sendMessage("I'm sorry, I don't recognise your input for the current branch. Did you want information on \"" + potentialPath.getTitle() + "\" instead?\n");
 						foundPotentialPath = true;
 					} else { // If cannot find match in Root node, asks user to try again
+						
 						gui.sendMessage("I'm sorry, I don't recognise your input for the current branch. Can you try me again with different words?");
 					}
 				}

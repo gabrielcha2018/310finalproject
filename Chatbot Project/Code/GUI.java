@@ -93,10 +93,10 @@ public class GUI {
       new Thread(() -> { try {
         chatbot.processInput(lastInput);
       } catch (ParseException e) {
-        // TODO Auto-generated catch block
+        
        System.out.println("problem on parse the json object");
       } catch (Exception e) {
-        // TODO Auto-generated catch block
+        
         System.out.println("some bad happend");
       } }).start();
     }
