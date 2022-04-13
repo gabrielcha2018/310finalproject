@@ -17,16 +17,16 @@ public void showimage(){
  
         try {
            
+
+            // connect the api and showing best buy kelowna location 
             String imageUrl = "https://maps.googleapis.com/maps/api/staticmap?autoscale=2&size=400x400&maptype=roadmap&key=AIzaSyBA_Wq9JJlr-8P7RuX5D781fQQkoiqxtKs"+
            "&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Ckelowna+best+buy";
         
-
-   
             String destinationFile = "image.jpg";
  
+        
             // read the map image from Google
             // then save it to a local file: image.jpg
-        
             URL url = new URL(imageUrl);
             InputStream is = url.openStream();
             OutputStream os = new FileOutputStream(destinationFile);
@@ -46,7 +46,7 @@ public void showimage(){
         }
  
         // create a GUI component that loads the image: image.jpg
-        
+        // pop out the gui window and showing the image 
         ImageIcon imageIcon = new ImageIcon((new ImageIcon("image.jpg"))
                 .getImage().getScaledInstance(630, 600,
                         java.awt.Image.SCALE_SMOOTH));
