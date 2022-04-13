@@ -81,6 +81,14 @@ public class Chatbot {
 	 */
 	public void processInput(String userInput) throws ParseException, Exception{
 
+		if (userInput.equals("location")){
+			gui.sendMessage("Our products could be buy in best buy kelowna. just copy the address below \n https://goo.gl/maps/5Wu6CVd9DzwwTA5M6 \n" );
+			  staticmaps.showimage();
+			gui.sendMessage("Thank you for using the location services. pleace type if you have more question");		
+			 reset();
+		  userInput="";
+			}
+
 
 // new code 
 		String temp = userInput;
@@ -94,17 +102,7 @@ if (!language.equals("en")){   // if user are not writing english
 }
 	else   
 	 userInput=temp;
-
-	 if (userInput.equals("map")){
-		gui.sendMessage("Our product could be buy in following store just copy the address below \n https://goo.gl/maps/5Wu6CVd9DzwwTA5M6");
-		staticmaps.showimage();
-	   gui.sendMessage("Thank you for using the map services. pleace type if you have more question");		
-		 reset();
-		 userInput="";
-		
-	 }
-
-  
+ 
 
 //......................................................................................
 

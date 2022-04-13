@@ -15,8 +15,8 @@ import org.json.simple.parser.ParseException;
 
 public class Translator {
 
-static String thetranslatedtext;// the tranlasted text 
-static String source;// the source of the user input 
+static String thetranslatedtext;  // the tranlasted text 
+static String source;  // the source of the user input 
 
 
 // constructor
@@ -34,7 +34,7 @@ static String source;// the source of the user input
             } 
 
   
-
+// connect to the url 
   public void connect(String url) throws Exception {
     URL obj = new URL(url);
     HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -52,9 +52,11 @@ static String source;// the source of the user input
     
   }
 
+
+  // handing the json string return back from the api
 public static void  gettheresult(String jsonstring) throws ParseException{
 
-    //if i type Bonjour
+    //for example If i type Bonjour
     // below it is the example of  json file return from the api 
     // { "data": {  "translations": [ {  "translatedText": "Hello", "detectedSourceLanguage": "fr" } ] }}
 
@@ -68,19 +70,20 @@ public static void  gettheresult(String jsonstring) throws ParseException{
 
      // getting the translated text
      thetranslatedtext= attribute.get("translatedText").toString();
-      // getting the source language
+      // getting the source language that the user input 
      source=attribute.get("detectedSourceLanguage").toString();
 
   }
     
 
 
-
+   // method of getting the tranalsted text 
   public static String  gettranslatedtext(){  return  thetranslatedtext; }
 
+  // method of getting the source language that the user input 
   public static String  getthesource(){   return  source;   }
 
-
+// saving the translated text and the source in to the string 
 public String [] returnArray( )  
 {  
    String []  info= new String [2]; 

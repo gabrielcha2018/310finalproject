@@ -18,7 +18,9 @@ public void showimage(){
         try {
            
             String imageUrl = "https://maps.googleapis.com/maps/api/staticmap?autoscale=2&size=400x400&maptype=roadmap&key=AIzaSyBA_Wq9JJlr-8P7RuX5D781fQQkoiqxtKs"+
-            "&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Ckelowna+best+buy";
+           "&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Ckelowna+best+buy";
+        
+
    
             String destinationFile = "image.jpg";
  
