@@ -1,12 +1,9 @@
 ### How to run code
-#### Assignment 2
-1. Pull repository from commit ID: https://github.com/Zecr/310SE/tree/3efb2bbd95feebb93a8d6dcbf2aedc5081967b5d
-2. Run Main.java
-#### Assignment 3
 1. Pull repository though VS Code
 2. Download models file from https://1drv.ms/u/s!AidBCfmtc0EDhtZiCroSVeDgESCegg?e=hZWT4m and put in Jars folder
 3. Unzip dict.zip and replace folder in Dictionaries (For some reason the file gets corrupted when pulled through github)
 4. Run Launcher.java
+
 
 ### Documentation
 #### Class Structure
@@ -27,6 +24,17 @@
     * Handles analysing user input for sentiment when required
 * Testing
     * Unit tests
+* Translator
+   *using the translator api auto translate the any languages in english
+* Staticmaps
+   *showing the static image for specific location 
+
+ 
+#### Assignment 4 new features
+
+
+
+
 #### Assignment 3 new features
 * Created GUI for better user experience
 * Added extra topic to agent (Now can answer questions about the fictional company's games as well as troubleshoot issues)
