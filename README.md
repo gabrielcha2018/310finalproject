@@ -25,9 +25,9 @@
 * Testing
     * Unit tests
 * Translator
-   *using the translator api auto translate the any languages in english
+   * using the translator api auto translate the any languages in english
 * Staticmaps
-   *showing the static image for specific location 
+   * showing the static image for specific location 
 
  
 #### Assignment 4 new features
