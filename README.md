@@ -36,5 +36,23 @@
 * Google Translate API
    * Translate the user input into english. user who know both english and other languages, could typing the question in forigen language. the bot will reply the message in english.
 
+* Client Liason: Mike Zhai 
+
+* Integration Lead: Yirui Li
+
+* Technical Lead: Ian Heales
+
+* Technical Manager/Scrum Master/PM (responsible for overall workflow): Gabrielcha Chen
+
+* Legal Company Name:
+
+* Company Mailing Address including City and Postal Code:
+
+* Company Contact Person:       
+
+* E-mail address: 
+
+ * Tel. No:
+
 
 
